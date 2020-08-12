@@ -8,8 +8,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 
 public class BarraHerramientasTemplate extends JPanel{
     
@@ -48,14 +48,14 @@ public class BarraHerramientasTemplate extends JPanel{
 
     public void crearFormulario(){
         this.lNumProcesos = sObjGraficos.construirJLabel(
-            "Numero de procesos:", 30, 15, 160, 20, null, sRecursos.getColorFuente(), 
-            null, sRecursos.getFontBotones(), "l"
+            "Numero de procesos:", 30, 15, 160, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.add(lNumProcesos);
 
         this.tNumProcesos = sObjGraficos.construirJTextField(
-            "0", 165, 17, 50, 20, sRecursos.getColorPrimario(), sRecursos.getColorFuente(), 
-            sRecursos.getColorFuente(), sRecursos.getFontBotones(), null, "c"
+            "0", 165, 17, 50, 20, sRecursos.getFontBotones(), sRecursos.getColorPrimario(), 
+            sRecursos.getColorFuente(), sRecursos.getColorFuente(), null, "c"
         );
         this.tNumProcesos.addFocusListener(barraHerramientasComponent);
         this.add(tNumProcesos);

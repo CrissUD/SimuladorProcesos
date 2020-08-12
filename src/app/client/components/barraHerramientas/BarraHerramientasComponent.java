@@ -15,8 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 import app.client.vistaPrincipal.VistaPrincipalComponent;
-import app.services.servicesGraphics.RecursosService;
-import app.services.servicesLogic.ColaService;
+import app.services.graphicServices.RecursosService;
+import app.services.logicServices.ColaService;
 
 
 public class BarraHerramientasComponent implements ActionListener, MouseListener, FocusListener{

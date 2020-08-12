@@ -3,7 +3,7 @@ package app.client.components.tablaProcesos;
 import java.awt.event.MouseListener;
 
 import app.client.vistaPrincipal.VistaPrincipalComponent;
-import app.services.servicesLogic.ColaService;
+import app.services.logicServices.ColaService;
 import models.Proceso;
 
 import java.awt.event.MouseEvent;

@@ -7,7 +7,7 @@ import java.awt.RenderingHints;
 
 import javax.swing.JPanel;
 
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.RecursosService;
 import models.Proceso;
 
 public class DiagramaGanttTemplate extends JPanel{

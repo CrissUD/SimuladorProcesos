@@ -4,8 +4,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 
 public class BarraMenuTemplate extends JPanel{
 
@@ -27,7 +27,7 @@ public class BarraMenuTemplate extends JPanel{
 
         this.lTitulo = sObjGraficos.construirJLabel(
             "Simulador de procesos", (pContenedor.getWidth() - 150) / 2, 0, 150, 20, 
-            null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "c"
+            null, null, sRecursos.getFontBotones(), null, sRecursos.getColorFuente(), null, "c"
         );
         this.add(lTitulo);
         

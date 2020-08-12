@@ -2,9 +2,10 @@ package app.client.components.diagramaGantt;
 
 import javax.swing.JOptionPane;
 
+import app.services.logicServices.ColaService;
+
 import java.awt.Dimension;
 
-import app.services.servicesLogic.ColaService;
 import models.Proceso;
 
 public class DiagramaGanttComponent implements Runnable{

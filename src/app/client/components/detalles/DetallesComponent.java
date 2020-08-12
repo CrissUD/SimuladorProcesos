@@ -7,8 +7,8 @@ import java.awt.event.MouseListener;
 import javax.swing.Timer;
 import javax.swing.JButton;
 
-import app.services.servicesGraphics.RecursosService;
-import app.services.servicesLogic.ColaService;
+import app.services.graphicServices.RecursosService;
+import app.services.logicServices.ColaService;
 import models.Proceso;
 
 import java.awt.event.MouseEvent;

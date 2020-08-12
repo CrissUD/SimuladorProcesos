@@ -6,11 +6,11 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import java.awt.Dimension;
+import app.services.graphicServices.GraficosAvanzadosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 
-import app.services.servicesGraphics.GraficosAvanzadosService;
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import java.awt.Dimension;
 
 public class TablaProcesosTemplate extends JPanel{
     

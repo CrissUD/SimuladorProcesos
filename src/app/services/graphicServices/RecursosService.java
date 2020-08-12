@@ -1,4 +1,4 @@
-package app.services.servicesGraphics;
+package app.services.graphicServices;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -6,6 +6,9 @@ import java.awt.Font;
 
 import javax.swing.BorderFactory;
 import javax.swing.border.Border;
+
+
+/** @author Cristian Felipe Patiño Cáceres */
 
 public class RecursosService {
 

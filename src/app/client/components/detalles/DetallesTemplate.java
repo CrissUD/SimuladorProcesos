@@ -7,8 +7,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import app.services.servicesGraphics.ObjGraficosService;
-import app.services.servicesGraphics.RecursosService;
+import app.services.graphicServices.ObjGraficosService;
+import app.services.graphicServices.RecursosService;
 
 public class DetallesTemplate extends JPanel{
     
@@ -97,8 +97,8 @@ public class DetallesTemplate extends JPanel{
 
     public void crearContenidoPDetallesProceso(){
         this.lTitulo = sObjGraficos.construirJLabel(
-            "Detalles Procesos", (230 - 180) / 2, 10, 180, 20, null, sRecursos.getColorFuente(), 
-            sRecursos.getColorSecundario(), sRecursos.getFontPequenia(), "c"
+            "Detalles Procesos", (230 - 180) / 2, 10, 180, 20, null, null, sRecursos.getFontPequenia(), 
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lTitulo);
 
@@ -112,62 +112,74 @@ public class DetallesTemplate extends JPanel{
         this.pDetallesProceso.add(bDespliegueDetalles);
 
         this.lNumProceso = sObjGraficos.construirJLabel(
-            "Numero Proceso:", 30, 80, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Numero Proceso:", 30, 80, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pDetallesProceso.add(lNumProceso);
 
         this.lTLlegada = sObjGraficos.construirJLabel(
-            "Tiempo de Llegada:", 30, 115, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo de Llegada:", 30, 115, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pDetallesProceso.add(lTLlegada);
 
         this.lTRafaga = sObjGraficos.construirJLabel(
-            "Tiempo de Rafaga:", 30, 150, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo de Rafaga:", 30, 150, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pDetallesProceso.add(lTRafaga);
 
         this.lTRetorno = sObjGraficos.construirJLabel(
-            "Tiempo de Retorno:", 30, 185, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo de Retorno:", 30, 185, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pDetallesProceso.add(lTRetorno);
 
         this.lTEspera = sObjGraficos.construirJLabel(
-            "Tiempo de Espera:", 30, 220, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo de Espera:", 30, 220, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pDetallesProceso.add(lTEspera);
 
         this.lTFinal = sObjGraficos.construirJLabel(
-            "Tiempo Final:", 30, 255, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo Final:", 30, 255, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pDetallesProceso.add(lTFinal);
 
         this.lNumProcesoValor = sObjGraficos.construirJLabel(
-            "0", 170, 80, 40, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "c"
+            "0", 170, 80, 40, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lNumProcesoValor);
 
         this.lTLlegadaValor = sObjGraficos.construirJLabel(
-            "0", 170, 115, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 115, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lTLlegadaValor);
 
         this.lTRafagaValor = sObjGraficos.construirJLabel(
-            "0", 170, 150, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 150, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lTRafagaValor);
 
         this.lTRetornoValor = sObjGraficos.construirJLabel(
-            "0", 170, 185, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 185, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lTRetornoValor);
 
         this.lTEsperaValor = sObjGraficos.construirJLabel(
-            "0", 170, 220, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 220, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lTEsperaValor);
 
         this.lTFinalValor = sObjGraficos.construirJLabel(
-            "0", 170, 255, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 255, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pDetallesProceso.add(lTFinalValor);
     }
@@ -182,42 +194,49 @@ public class DetallesTemplate extends JPanel{
         this.pSiguienteProceso.add(bDespliegueSiguienteProceso);
 
         this.lNumSigProceso = sObjGraficos.construirJLabel(
-            "Numero Proceso:", 30, 50, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Numero Proceso:", 30, 50, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pSiguienteProceso.add(lNumSigProceso);
 
         this.lTLlegadaSigProceso = sObjGraficos.construirJLabel(
-            "Tiempo de Llegada:", 30, 85, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo de Llegada:", 30, 85, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pSiguienteProceso.add(lTLlegadaSigProceso);
 
         this.lTFinalSigProceso = sObjGraficos.construirJLabel(
-            "Tiempo Final:", 30, 120, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Tiempo Final:", 30, 120, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pSiguienteProceso.add(lTFinalSigProceso);
 
         this.lSigProceso = sObjGraficos.construirJLabel(
-            "Siguiente proceso:", 30, 155, 120, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "l"
+            "Siguiente proceso:", 30, 155, 120, 20, null, null, sRecursos.getFontBotones(),
+            null, sRecursos.getColorFuente(), null, "l"
         );
         this.pSiguienteProceso.add(lSigProceso);
 
         this.lNumSigProcesoValor = sObjGraficos.construirJLabel(
-            "0", 170, 50, 40, 20, null, sRecursos.getColorFuente(), null, sRecursos.getFontBotones(), "c"
+            "0", 170, 50, 40, 20, null, null, sRecursos.getFontBotones(), null, sRecursos.getColorFuente(), null, "c"
         );
         this.pSiguienteProceso.add(lNumSigProcesoValor);
 
         this.lTLlegadaSigProcesoValor = sObjGraficos.construirJLabel(
-            "0", 170, 85, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 85, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pSiguienteProceso.add(lTLlegadaSigProcesoValor);
 
         this.lTFinalSigProcesoValor = sObjGraficos.construirJLabel(
-            "0", 170, 120, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 120, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pSiguienteProceso.add(lTFinalSigProcesoValor);
 
         this.lSigProcesoValor = sObjGraficos.construirJLabel(
-            "0", 170, 155, 40, 20, null, sRecursos.getColorFuente(), sRecursos.getColorSecundario(), sRecursos.getFontBotones(), "c"
+            "0", 170, 155, 40, 20, null, null, sRecursos.getFontBotones(),
+            sRecursos.getColorSecundario(), sRecursos.getColorFuente(), null, "c"
         );
         this.pSiguienteProceso.add(lSigProcesoValor);
 
