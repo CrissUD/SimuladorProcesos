@@ -8,7 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.border.Border;
 
 
-/** @author Cristian Felipe Patiño Cáceres */
+/** @author Cristian Felipe Patiño Cáceres Github: CrissUD*/
 
 public class RecursosService {
 
