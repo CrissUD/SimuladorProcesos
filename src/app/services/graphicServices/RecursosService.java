@@ -44,8 +44,8 @@ public class RecursosService {
         cMano = new Cursor(Cursor.HAND_CURSOR);
         bordeAzul = BorderFactory.createLineBorder(colorAzul, 1, false);
         bordeGris = BorderFactory.createLineBorder(colorCuaternario, 1, false);
-        bordeCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, null);
-        bordeRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 20, false, null);
+        bordeCircular = sGraficosAvanzados.DibujarBordeCircular(null, false, false, null);
+        bordeRedondeado = sGraficosAvanzados.DibujarBordeRedondeado(null, 20, false, false, null);
     }
     
     public Color getColorPrimario(){
