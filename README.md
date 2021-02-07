@@ -9,7 +9,7 @@ En el ejemplo se presenta:
 * Enfoque de **ComponentesGráficos** para modularización de responsabilidades.
 * **Modularización de código** separando la creación de objetos gráficos.
 * Optimizacion de recursos para aplicaciones a traves de **servicios**.
-* Optimización de código a traces de **servicios**.
+* Optimización de código a traves de **servicios**.
 * Personalización avanzada a traves de **servicio**.
 * Representación única de objetos de una misma clase (Singleton) para control de **Servicios**.
 * Uso de eventos a traves de **ActionListener, MouseListener, FocusListener**.
